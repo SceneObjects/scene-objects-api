@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  locked: false
+  position_x: 1.5
+  position_y: 1.5
+  position_z: 1.5
+  texture_type: MyString
+  texture_url: MyString
+  scale_x: 1.5
+  scale_y: 1.5
+  scale_z: 1.5
+  rotation_x: 1.5
+  rotation_y: 1.5
+  rotation_z: 1.5
+  hidden: false
+  name: MyString
+
+two:
+  type: 
+  locked: false
+  position_x: 1.5
+  position_y: 1.5
+  position_z: 1.5
+  texture_type: MyString
+  texture_url: MyString
+  scale_x: 1.5
+  scale_y: 1.5
+  scale_z: 1.5
+  rotation_x: 1.5
+  rotation_y: 1.5
+  rotation_z: 1.5
+  hidden: false
+  name: MyString

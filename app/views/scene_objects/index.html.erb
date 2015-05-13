@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Scene Objects</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Locked</th>
+      <th>Position x</th>
+      <th>Position y</th>
+      <th>Position z</th>
+      <th>Texture type</th>
+      <th>Texture url</th>
+      <th>Scale x</th>
+      <th>Scale y</th>
+      <th>Scale z</th>
+      <th>Rotation x</th>
+      <th>Rotation y</th>
+      <th>Rotation z</th>
+      <th>Hidden</th>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @scene_objects.each do |scene_object| %>
+      <tr>
+        <td><%= scene_object.type %></td>
+        <td><%= scene_object.locked %></td>
+        <td><%= scene_object.position_x %></td>
+        <td><%= scene_object.position_y %></td>
+        <td><%= scene_object.position_z %></td>
+        <td><%= scene_object.texture_type %></td>
+        <td><%= scene_object.texture_url %></td>
+        <td><%= scene_object.scale_x %></td>
+        <td><%= scene_object.scale_y %></td>
+        <td><%= scene_object.scale_z %></td>
+        <td><%= scene_object.rotation_x %></td>
+        <td><%= scene_object.rotation_y %></td>
+        <td><%= scene_object.rotation_z %></td>
+        <td><%= scene_object.hidden %></td>
+        <td><%= scene_object.name %></td>
+        <td><%= link_to 'Show', scene_object %></td>
+        <td><%= link_to 'Edit', edit_scene_object_path(scene_object) %></td>
+        <td><%= link_to 'Destroy', scene_object, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Scene object', new_scene_object_path %>
