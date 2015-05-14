@@ -1,8 +1,9 @@
 {
   "name": "Cat Photo",
-  "texture": "http://image-of-texture.com/texture.jpg",
+  "texture": "http://image-of-texture.com/texture.jpg", // Can also pass a color her
   "position": [10.0, 0.5, 0.0],
   "rotation": [359.0, 30.0, 0.0],
   "scale": [1.0, 1.0, 1.0],
-  
+  "locked": true, // Locked objects cannot be moved by the viewer, only by the manager
+  "hidden": false
 }
