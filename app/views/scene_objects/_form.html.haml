@@ -1,0 +1,71 @@
+= form_for(@scene_object) do |f|
+  - if @scene_object.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@scene_object.errors.count, "error")
+        prohibited this scene_object from being saved:
+      %ul
+        - @scene_object.errors.full_messages.each do |message|
+          %li= message
+  .field
+    = f.label :type
+    %br/
+    = f.text_field :type
+  .field
+    = f.label :locked
+    %br/
+    = f.check_box :locked
+  .field
+    = f.label :position_x
+    %br/
+    = f.text_field :position_x
+  .field
+    = f.label :position_y
+    %br/
+    = f.text_field :position_y
+  .field
+    = f.label :position_z
+    %br/
+    = f.text_field :position_z
+  .field
+    = f.label :texture_type
+    %br/
+    = f.text_field :texture_type
+  .field
+    = f.label :texture_url
+    %br/
+    = f.text_field :texture_url
+  .field
+    = f.label :scale_x
+    %br/
+    = f.text_field :scale_x
+  .field
+    = f.label :scale_y
+    %br/
+    = f.text_field :scale_y
+  .field
+    = f.label :scale_z
+    %br/
+    = f.text_field :scale_z
+  .field
+    = f.label :rotation_x
+    %br/
+    = f.text_field :rotation_x
+  .field
+    = f.label :rotation_y
+    %br/
+    = f.text_field :rotation_y
+  .field
+    = f.label :rotation_z
+    %br/
+    = f.text_field :rotation_z
+  .field
+    = f.label :hidden
+    %br/
+    = f.check_box :hidden
+  .field
+    = f.label :name
+    %br/
+    = f.text_field :name
+  .actions
+    = f.submit

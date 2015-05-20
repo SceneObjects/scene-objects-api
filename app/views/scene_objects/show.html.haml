@@ -1,0 +1,49 @@
+%p#notice= notice
+%p
+  %strong Type:
+  = @scene_object.type
+%p
+  %strong Locked:
+  = @scene_object.locked
+%p
+  %strong Position x:
+  = @scene_object.position_x
+%p
+  %strong Position y:
+  = @scene_object.position_y
+%p
+  %strong Position z:
+  = @scene_object.position_z
+%p
+  %strong Texture type:
+  = @scene_object.texture_type
+%p
+  %strong Texture url:
+  = @scene_object.texture_url
+%p
+  %strong Scale x:
+  = @scene_object.scale_x
+%p
+  %strong Scale y:
+  = @scene_object.scale_y
+%p
+  %strong Scale z:
+  = @scene_object.scale_z
+%p
+  %strong Rotation x:
+  = @scene_object.rotation_x
+%p
+  %strong Rotation y:
+  = @scene_object.rotation_y
+%p
+  %strong Rotation z:
+  = @scene_object.rotation_z
+%p
+  %strong Hidden:
+  = @scene_object.hidden
+%p
+  %strong Name:
+  = @scene_object.name
+= link_to 'Edit', edit_scene_object_path(@scene_object)
+|
+= link_to 'Back', scene_objects_path

@@ -1,0 +1,44 @@
+%p#notice= notice
+%h1 Listing Scene Objects
+%table
+  %thead
+    %tr
+      %th Type
+      %th Locked
+      %th Position x
+      %th Position y
+      %th Position z
+      %th Texture type
+      %th Texture url
+      %th Scale x
+      %th Scale y
+      %th Scale z
+      %th Rotation x
+      %th Rotation y
+      %th Rotation z
+      %th Hidden
+      %th Name
+      %th{:colspan => "3"}
+  %tbody
+    - @scene_objects.each do |scene_object|
+      %tr
+        %td= scene_object.type
+        %td= scene_object.locked
+        %td= scene_object.position_x
+        %td= scene_object.position_y
+        %td= scene_object.position_z
+        %td= scene_object.texture_type
+        %td= scene_object.texture_url
+        %td= scene_object.scale_x
+        %td= scene_object.scale_y
+        %td= scene_object.scale_z
+        %td= scene_object.rotation_x
+        %td= scene_object.rotation_y
+        %td= scene_object.rotation_z
+        %td= scene_object.hidden
+        %td= scene_object.name
+        %td= link_to 'Show', scene_object
+        %td= link_to 'Edit', edit_scene_object_path(scene_object)
+        %td= link_to 'Destroy', scene_object, method: :delete, data: { confirm: 'Are you sure?' }
+%br/
+= link_to 'New Scene object', new_scene_object_path
