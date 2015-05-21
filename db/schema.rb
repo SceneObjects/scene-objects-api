@@ -11,10 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150513030613) do
+ActiveRecord::Schema.define(version: 20150521003236) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "scene_objects", force: :cascade do |t|
-    t.string   "type"
+    t.string   "kind"
     t.boolean  "locked"
     t.float    "position_x"
     t.float    "position_y"

@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  type: 
+  kind: Cube 
   locked: false
   position_x: 1.5
   position_y: 1.5
@@ -18,7 +18,7 @@ one:
   name: MyString
 
 two:
-  type: 
+  kind: Sphere
   locked: false
   position_x: 1.5
   position_y: 1.5

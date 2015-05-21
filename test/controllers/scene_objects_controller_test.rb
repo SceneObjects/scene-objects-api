@@ -18,7 +18,7 @@ class SceneObjectsControllerTest < ActionController::TestCase
 
   test "should create scene_object" do
     assert_difference('SceneObject.count') do
-      post :create, scene_object: { hidden: @scene_object.hidden, locked: @scene_object.locked, name: @scene_object.name, position_x: @scene_object.position_x, position_y: @scene_object.position_y, position_z: @scene_object.position_z, rotation_x: @scene_object.rotation_x, rotation_y: @scene_object.rotation_y, rotation_z: @scene_object.rotation_z, scale_x: @scene_object.scale_x, scale_y: @scene_object.scale_y, scale_z: @scene_object.scale_z, texture_type: @scene_object.texture_type, texture_url: @scene_object.texture_url, type: @scene_object.type }
+      post :create, scene_object: { hidden: @scene_object.hidden, locked: @scene_object.locked, name: @scene_object.name, position_x: @scene_object.position_x, position_y: @scene_object.position_y, position_z: @scene_object.position_z, rotation_x: @scene_object.rotation_x, rotation_y: @scene_object.rotation_y, rotation_z: @scene_object.rotation_z, scale_x: @scene_object.scale_x, scale_y: @scene_object.scale_y, scale_z: @scene_object.scale_z, texture_type: @scene_object.texture_type, texture_url: @scene_object.texture_url, kind: @scene_object.kind }
     end
 
     assert_redirected_to scene_object_path(assigns(:scene_object))
@@ -35,7 +35,7 @@ class SceneObjectsControllerTest < ActionController::TestCase
   end
 
   test "should update scene_object" do
-    patch :update, id: @scene_object, scene_object: { hidden: @scene_object.hidden, locked: @scene_object.locked, name: @scene_object.name, position_x: @scene_object.position_x, position_y: @scene_object.position_y, position_z: @scene_object.position_z, rotation_x: @scene_object.rotation_x, rotation_y: @scene_object.rotation_y, rotation_z: @scene_object.rotation_z, scale_x: @scene_object.scale_x, scale_y: @scene_object.scale_y, scale_z: @scene_object.scale_z, texture_type: @scene_object.texture_type, texture_url: @scene_object.texture_url, type: @scene_object.type }
+    patch :update, id: @scene_object, scene_object: { hidden: @scene_object.hidden, locked: @scene_object.locked, name: @scene_object.name, position_x: @scene_object.position_x, position_y: @scene_object.position_y, position_z: @scene_object.position_z, rotation_x: @scene_object.rotation_x, rotation_y: @scene_object.rotation_y, rotation_z: @scene_object.rotation_z, scale_x: @scene_object.scale_x, scale_y: @scene_object.scale_y, scale_z: @scene_object.scale_z, texture_type: @scene_object.texture_type, texture_url: @scene_object.texture_url, kind: @scene_object.kind }
     assert_redirected_to scene_object_path(assigns(:scene_object))
   end
 

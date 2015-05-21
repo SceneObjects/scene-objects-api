@@ -69,6 +69,6 @@ class SceneObjectsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def scene_object_params
-      params.require(:scene_object).permit(:type, :locked, :position_x, :position_y, :position_z, :texture_type, :texture_url, :scale_x, :scale_y, :scale_z, :rotation_x, :rotation_y, :rotation_z, :hidden, :name)
+      params.require(:scene_object).permit(:kind, :locked, :position_x, :position_y, :position_z, :texture_type, :texture_url, :scale_x, :scale_y, :scale_z, :rotation_x, :rotation_y, :rotation_z, :hidden, :name)
     end
 end

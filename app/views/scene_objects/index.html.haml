@@ -3,7 +3,7 @@
 %table
   %thead
     %tr
-      %th Type
+      %th Kind
       %th Locked
       %th Position x
       %th Position y
@@ -22,7 +22,7 @@
   %tbody
     - @scene_objects.each do |scene_object|
       %tr
-        %td= scene_object.type
+        %td= scene_object.kind
         %td= scene_object.locked
         %td= scene_object.position_x
         %td= scene_object.position_y
